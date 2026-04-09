@@ -1,2 +1,41 @@
-/** COLORS */
-  
+/** COLORS 
+    916953 - toffee brown
+    CF8E80 - rosy taupe
+    FCB5B5 - powder blush
+    FCB5B5 - pastel petal
+    FCDDF2 - petal frost
+    FAF6F6 - snow
+
+ */
+
+/* Google Fonts placeholders */
+
+/* Apply your heading font family to all headers (h1 - h6) and via the utility class */
+.font-headings,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: /* Add heading Google Font family here, e.g. 'Montserrat', sans-serif */;
+}
+
+/* Apply your body font family to body-level text, divs, and paragraphs */
+.font-body,
+body,
+div,
+p {
+    font-family: /* Add body Google Font family here, e.g. 'Open Sans', sans-serif */;
+}
+
+
+/***** NAV BAR ****/
+.header {
+    height: 90px;
+}
+.header-logo img {
+    height: 100px;   /* adjust this */
+    width: auto;
+}
+ 

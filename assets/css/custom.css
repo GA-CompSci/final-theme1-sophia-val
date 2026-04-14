@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: /* Add heading Google Font family here, e.g. 'Montserrat', sans-serif */;
+    font-family: "Edu NSW ACT Cursive" !important;
 }
 
 /* Apply your body font family to body-level text, divs, and paragraphs */
@@ -26,16 +26,19 @@ h6 {
 body,
 div,
 p {
-    font-family: /* Add body Google Font family here, e.g. 'Open Sans', sans-serif */;
+    font-family: "Smooch Sans", sans-serif !important;
 }
 
 
 /***** NAV BAR ****/
 .header {
-    height: 90px;
+    height: 140px;
 }
-.header-logo img {
-    height: 100px;   /* adjust this */
+.header .header-logo img {
     width: auto;
+    height: 160px;
+    max-height: 160px;
 }
- 
+
+
+

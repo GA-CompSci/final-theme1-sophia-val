@@ -35,11 +35,22 @@ p {
 /***** NAV BAR ****/
 .header {
     height: 140px;
+    background: #cae9ff;
 }
+.header ul {
+    /*vertical centering of nav items*/
+    padding-top: 35px !important;
+
+}
+
 .header .header-logo img {
     width: auto;
     height: 160px;
     max-height: 160px;
+}
+
+.section-sm {
+    background-color: #FCB5B5
 }
 
 

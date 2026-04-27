@@ -20,12 +20,13 @@
 
 	<!-- Fonts/Icons -->
 	<link href="assets/plugins/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-	<link href="assets/css/custom.css" rel="stylesheet">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Smooch+Sans:wght@100..900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
 		rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
 </head>
 
 <body data-preloader="1-dark">
@@ -35,8 +36,8 @@
 		<div class="container">
 			<!-- Logo -->
 			<div class="header-logo">
-					<img class="logo-dark" src="assets/images/jojoslogo.png" alt="JoJo's Creamery">
-					<img class="logo-light" src="assets/images/jojoslogo.png" alt="JoJo's Creamery">
+				<img class="logo-dark" src="assets/images/jojoslogo.png" alt="JoJo's Creamery">
+				<img class="logo-light" src="assets/images/jojoslogo.png" alt="JoJo's Creamery">
 				</a>
 			</div>
 			<!-- Menu -->
@@ -46,16 +47,16 @@
 						<a class="nav-link" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
+						<a class="nav-link" href="#about">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#menu">Our Menu</a>
+						<a class="nav-link" href="#menu">Menu</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#reservation">Reservation</a>
+						<a class="nav-link" href="#reservation">Orders</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
+						<a class="nav-link" href="#contact">Store</a>
 					</li>
 				</ul>
 			</div>
@@ -75,30 +76,85 @@
 	<!-- end Header -->
 
 	<!-- Hero section -->
-	<div id="home" class="section-fullscreen bg-image parallax" data-bg-src="assets/images/jojossunset.webp">
-		<div class="bg-dark-07">
-			<div class="container text-center">
-				<div class="position-middle">
-					<div class="row">
-						<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-							<h1 class="display-3 font-family-playfair fw-normal m-0"></h1>
+	<div id="home" style="position: relative;">
+		<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+			<!-- Indicators -->
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<!-- Slides -->
+			<div class="carousel-inner" style="min-height: 100vh;">
+
+				<!-- Slide 1 -->
+				<div class="carousel-item active"
+					style="min-height:100vh; background-image:url('assets/images/jojossunset.webp'); background-size:cover; background-position:center;">
+					<div class="bg-dark-07"
+						style="min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center;">
+						<div class="container">
+							<h1 class="display-3 font-family-playfair fw-normal text-white">Welcome to JoJo's</h1>
+							<p class="text-white fw-light fs-5">Handcrafted ice cream made with love</p>
 						</div>
-					</div><!-- end row -->
-				</div> <!-- smoothscroll button -->
-				<div class="position-bottom"> <a class="icon-xl" href="#about"> <i class="bi bi-arrow-down"></i> </a>
+					</div>
 				</div>
-			</div><!-- end container -->
+
+				<!-- Slide 2 -->
+				<div class="carousel-item"
+					style="min-height:100vh; background-image:url('assets/images/jojossnow.png'); background-size:cover; background-position:center;">
+					<div class="bg-dark-07"
+						style="min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center;">
+						<div class="container">
+							<h1 class="display-3 font-family-playfair fw-normal text-white">Open Year Round</h1>
+							<p class="text-white fw-light fs-5">Visit us in Willoughby, OH</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide 3 -->
+				<div class="carousel-item"
+					style="min-height:100vh; background-image:url('assets/images/col-1.jpg'); background-size:cover; background-position:center;">
+					<div class="bg-dark-07"
+						style="min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center;">
+						<div class="container">
+							<h1 class="display-3 font-family-playfair fw-normal text-white">Over 20 Flavors</h1>
+							<p class="text-white fw-light fs-5">Find your new favorite</p>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- end carousel-inner -->
+
+			<!-- Prev / Next controls -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+
+		</div><!-- end carousel -->
+
+		<!-- Scroll-down arrow -->
+		<div style="position:absolute; bottom:2rem; left:50%; transform:translateX(-50%); z-index:10;">
+			<a class="icon-xl text-white" href="#about"><i class="bi bi-arrow-down"></i></a>
 		</div>
 	</div>
 	<!-- end Hero section -->
+
 
 	<!-- About section -->
 	<div id="about" class="section">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-					<p class="font-family-poppins font-small uppercase text-dark-04">Since 1998</p>
-					<h1 class="font-family-playfair fw-normal display-5">Our Story</h1>
+					<p class="font-family-poppins font-small uppercase text-dark-04">Since 2024</p>
+					<h1 class="font-family-playfair fw-normal display-5">A Bit About Us</h1>
 					<p class="fw-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
 						eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
 						ridiculus mus. </p>
@@ -154,24 +210,24 @@
 					<i class="bi bi-chat-square-quote text-dark mb-4"></i>
 					<p class="fw-light mb-3">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.
 						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-					<h4 class="font-family-playfair fw-normal line-height-120">Emiley Haley</h4>
-					<span class="font-family-poppins font-small fw-normal uppercase text-dark-04">Cook</span>
+					<h4 class="font-family-playfair fw-normal line-height-120">Tina Lallo</h4>
+					<span class="font-family-poppins font-small fw-normal uppercase text-dark-04">Owner</span>
 				</div>
 				<!-- Testimonial box 2 -->
 				<div class="testimonial-box">
 					<i class="bi bi-chat-square-quote text-dark mb-4"></i>
 					<p class="fw-light mb-3">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.
 						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-					<h4 class="font-family-playfair fw-normal line-height-120">Emiley Haley</h4>
-					<span class="font-family-poppins font-small fw-normal uppercase text-dark-04">Cook</span>
+					<h4 class="font-family-playfair fw-normal line-height-120">Jason Lallo</h4>
+					<span class="font-family-poppins font-small fw-normal uppercase text-dark-04">Owner</span>
 				</div>
 				<!-- Testimonial box 3 -->
 				<div class="testimonial-box">
 					<i class="bi bi-chat-square-quote text-dark mb-4"></i>
 					<p class="fw-light mb-3">"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa.
 						Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."</p>
-					<h4 class="font-family-playfair fw-normal line-height-120">Emiley Haley</h4>
-					<span class="font-family-poppins font-small fw-normal uppercase text-dark-04">Cook</span>
+					<h4 class="font-family-playfair fw-normal line-height-120">JoJo Lallo</h4>
+
 				</div>
 			</div><!-- end owl-carousel -->
 		</div><!-- end container -->
@@ -179,12 +235,12 @@
 	<!-- end Testimonial section -->
 
 	<!-- Menu section -->
-	<div id="menu" class="section bg-dark">
+	<div id="menu" class="section bg-menu">
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-					<h1>Our Menu</h1>
-					<span class="text-grey text-small">Prices May Have Changed </span>
+					<h1>Menu</h1>
+					<span class="text-dark text-small">Prices May Have Changed </span>
 				</div>
 			</div><!-- end row -->
 			<!-- Tab Contents -->
@@ -192,7 +248,7 @@
 				<!-- Main Courses -->
 				<div class="tab-pane fade show active" id="icecream">
 					<div class="row g-5">
-						<span class="text-center text-white">Small $4.75 Medium $5.95 Large 7.25</span>
+						<span class="text-center text-dark">Small $4.75 Medium $5.95 Large 7.25</span>
 						<div class="col-12 col-lg-6">
 							<!-- Menu Item -->
 							<div class="d-md-flex justify-content-between">
@@ -596,7 +652,7 @@
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
 									<h5 class="font-family-playfair fw-normal m-0">Old Fashioned Floats</h5>
-									<p class="fw-light">Black Cherry, Creme, Grape, Orange, Root</p>
+									<p class="fw-light">Black Cherry, Creme, Grape, Orange, Root Beer</p>
 								</div>
 								<div class="d-md-inline-block text-md-end">
 
@@ -614,45 +670,44 @@
 							<!-- Menu Item -->
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
-									<h5 class="font-family-playfair fw-normal m-0">Chocolate Pumpkin Mousse Pie</h5>
-									<p class="fw-light">Delightful layers of pumpkin, cheesecake and chocolate</p>
+									<h5 class="font-family-playfair fw-normal m-0">Soft Pretzel</h5>
+
 								</div>
 								<div class="d-md-inline-block text-md-end">
-									<h3 class="font-family-playfair fw-normal">$24</h3>
+
 								</div>
 							</div>
 							<!-- Menu Item -->
 							<hr class="mt-3 mb-3">
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
-									<h5 class="font-family-playfair fw-normal m-0">Lemon Cake</h5>
-									<p class="fw-light">Moist lemon layer cake with lemon cream cheese buttercream</p>
+									<h5 class="font-family-playfair fw-normal m-0">Hot Dog</h5>
+
 								</div>
 								<div class="d-md-inline-block text-md-end">
-									<h3 class="font-family-playfair fw-normal">$21</h3>
+
 								</div>
 							</div>
 							<!-- Menu Item -->
 							<hr class="mt-3 mb-3">
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
-									<h5 class="font-family-playfair fw-normal m-0">Chocolate Cheesecake</h5>
-									<p class="fw-light">Dark chocolate, cream cheese and caramel</p>
+									<h5 class="font-family-playfair fw-normal m-0">Nachos w/ Cheese</h5>
+
 								</div>
 								<div class="d-md-inline-block text-md-end">
-									<h3 class="font-family-playfair fw-normal">$23</h3>
+
 								</div>
 							</div>
 							<!-- Menu Item -->
 							<hr class="mt-3 mb-3">
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
-									<h5 class="font-family-playfair fw-normal m-0">Fried Ice Cream</h5>
-									<p class="fw-light">Vanilla ice cream coated with crushed cinnamon toast crunch
-										cereal</p>
+									<h5 class="font-family-playfair fw-normal m-0">Acai Bowls</h5>
+									<p class="fw-light">Peanut Butter Power, Berry Bowl, Build Your Own</p>
 								</div>
 								<div class="d-md-inline-block text-md-end">
-									<h3 class="font-family-playfair fw-normal">$19</h3>
+
 								</div>
 							</div>
 						</div>
@@ -660,33 +715,33 @@
 							<!-- Menu Item -->
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
-									<h5 class="font-family-playfair fw-normal m-0">Chocolate Pumpkin Mousse Pie</h5>
-									<p class="fw-light">Delightful layers of pumpkin, cheesecake and chocolate</p>
+									<h5 class="font-family-playfair fw-normal m-0">Soda</h5>
+									<p class="fw-light">Black Cherry, Creme, Grape, Orange, Root Beer</p>
 								</div>
 								<div class="d-md-inline-block text-md-end">
-									<h3 class="font-family-playfair fw-normal">$24</h3>
+
 								</div>
 							</div>
 							<!-- Menu Item -->
 							<hr class="mt-3 mb-3">
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
-									<h5 class="font-family-playfair fw-normal m-0">Lemon Cake</h5>
-									<p class="fw-light">Moist lemon layer cake with lemon cream cheese buttercream</p>
+									<h5 class="font-family-playfair fw-normal m-0">Coffee</h5>
+									<p class="fw-light">French Vanilla, White Chocolate, S'mores, Hazelnut, Caramel</p>
 								</div>
 								<div class="d-md-inline-block text-md-end">
-									<h3 class="font-family-playfair fw-normal">$21</h3>
+
 								</div>
 							</div>
 							<!-- Menu Item -->
 							<hr class="mt-3 mb-3">
 							<div class="d-md-flex justify-content-between">
 								<div class="d-md-inline-block me-md-3">
-									<h5 class="font-family-playfair fw-normal m-0">Chocolate Cheesecake</h5>
-									<p class="fw-light">Dark chocolate, cream cheese and caramel</p>
+									<h5 class="font-family-playfair fw-normal m-0">Chocolate Cheesec</h5>
+
 								</div>
 								<div class="d-md-inline-block text-md-end">
-									<h3 class="font-family-playfair fw-normal">$23</h3>
+
 								</div>
 							</div>
 							<!-- Menu Item -->
@@ -729,7 +784,7 @@
 	<!-- end Menu section -->
 
 	<!-- Parallax section -->
-	<div id="reservation" class="section-xl bg-image parallax" data-bg-src="assets/images/jojossnow.png">
+	<div id="reservation" class="section-xl bg-image" data-bg-src="assets/images/jojossnow.png">
 		<div class="bg-dark-06">
 			<div class="container text-center">
 				<div class="row g-4">
@@ -776,29 +831,30 @@
 		</div>
 	</div>
 
-	</div><!-- end row -->
-	<div class="mt-5">
-		<div id="map1" class="gmap gmap-lg" data-latitude="51.513569" data-longitude="-0.123443"></div>
-	</div>
-	</div><!-- end container -->
-	</div>
-	<!-- end Contact section -->
+
 
 	<footer>
 		<div class="section-sm">
 			<div class="container fw-light">
 				<div class="row align-items-center g-3">
-					<div class="col-12 col-md-6 text-center text-md-start uppercase text-dark">
+					<div class="col-12 col-md-6 text-center text-md-start text-dark">
 						<ul class="list-inline-dash">
 							<li><a href="#about">About</a></li>
 							<li><a href="#menu">Menu</a></li>
-							
+
 						</ul>
-						<p class="mt-2">&copy; 2026 Jojo's, All Rights Reserved.</p>
+						<p class="mt-2">&copy; 2026 JoJo's Creamery </p>
+						<p class="mt-2">
+							Made by
+							<a href="https://www.gilmour.org/" target="_blank">
+								Gilmour Academy Students
+							</a>
+						</p>
 					</div>
 					<div class="col-12 col-md-6 text-center text-md-end">
 						<ul class="list-inline">
-							<li><a href="https://www.facebook.com/p/JoJos-Creamery-61553235155420/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+							<li><a href="https://www.facebook.com/p/JoJos-Creamery-61553235155420/" target="_blank"><i
+										class="bi bi-facebook"></i></a></li>
 						</ul>
 					</div>
 				</div><!-- end row -->

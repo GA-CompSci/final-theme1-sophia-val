@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Edu NSW ACT Cursive" !important;
+    font-family: "Agbalumo", system-ui !important;
 }
 
 /* Apply your body font family to body-level text, divs, and paragraphs */
@@ -28,7 +28,7 @@ h6 {
 body,
 div,
 p {
-    font-family: "Smooch Sans", sans-serif !important;
+   font-family: "Rubik", sans-serif !important;
 }
 
 
@@ -54,3 +54,8 @@ p {
 }
 
 
+/***** MENU ****/
+
+#menu {
+    background-color: #FCDDF2 !important;
+}

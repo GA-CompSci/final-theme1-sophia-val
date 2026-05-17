@@ -2,7 +2,6 @@
     916953 - toffee brown
     CF8E80 - rosy taupe
     FCB5B5 - powder blush
-    FCB5B5 - pastel petal
     FCDDF2 - petal frost
     FAF6F6 - snow
     cae9ff - light blue
@@ -58,6 +57,7 @@ p {
 
 #menu {
     background-color: #FCDDF2 !important;
+    padding: 40px !important;
 }
 
 #facts {
@@ -94,4 +94,23 @@ p {
     font-weight: 500 !important;
     border-radius: 5px !important;
     transition: background-color 0.3s ease !important;
+}
+
+#about {
+    background-color: #FCB5B5 !important;
+    color: #000000 !important;
+    font-weight: 300 !important;
+    padding: 40px !important;
+}
+
+#testimonials {
+    color: #000000 !important;
+    font-weight: 300 !important;
+    padding: 40px !important;
+}
+
+#facts {
+    color: #000000 !important;
+    font-weight: 300 !important;
+    padding: 40px !important;
 }
